@@ -17,14 +17,9 @@ namespace DiscussionForumModule
             InitializeComponent();
 
             Group = "客戶服務";
-            //helpContentPanel1.Naviate("http://www.ischool.com.tw/");
-        
-            //helpContentPanel1.Naviate("http://forum.ischool.com.tw/index.php");
 
-            helpContentPanel1.Naviate("https://ischool.zendesk.com/home");
-
-            //helpContentPanel1.Naviate("https://www.facebook.com/pages/ischool-%E6%BE%94%E5%AD%B8/134650313212257");
-        }
+            helpContentPanel1.Naviate("https://ischool.zendesk.com/hc/zh-tw");
+}
 
         private static ForumAdmin _DFM_admin;
 
@@ -35,7 +30,7 @@ namespace DiscussionForumModule
 
         private void InitializeComponent()
         {
-            this.helpContentPanel1 = new HelpContentPanel();
+            this.helpContentPanel1 = new DiscussionForumModule.HelpContentPanel();
             this.ContentPanePanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,7 +48,7 @@ namespace DiscussionForumModule
             this.helpContentPanel1.Size = new System.Drawing.Size(870, 421);
             this.helpContentPanel1.TabIndex = 0;
             // 
-            // StuAdmin
+            // ForumAdmin
             // 
             this.Name = "ForumAdmin";
             this.ContentPanePanel.ResumeLayout(false);

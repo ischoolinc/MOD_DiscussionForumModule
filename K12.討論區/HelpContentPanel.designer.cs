@@ -1,4 +1,6 @@
-﻿namespace DiscussionForumModule
+﻿using System.Windows.Forms;
+
+namespace DiscussionForumModule
 {
     partial class HelpContentPanel
     {
@@ -28,23 +30,31 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Web = new System.Windows.Forms.WebBrowser();
+            //this.Web = new EO.WebBrowser.WebView();
+            //this.wCtrl1 = new EO.WinForm.WebControl();
             this.SuspendLayout();
             // 
             // Web
             // 
-            this.Web.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Web.Location = new System.Drawing.Point(0, 0);
-            this.Web.MinimumSize = new System.Drawing.Size(20, 20);
-            this.Web.Name = "Web";
-            this.Web.Size = new System.Drawing.Size(625, 522);
-            this.Web.TabIndex = 0;
+            //this.Web.InputMsgFilter = null;
+            //this.Web.ObjectForScripting = null;
+            //this.Web.Title = null;
+            // 
+            // wCtrl1
+            // 
+            //this.wCtrl1.BackColor = System.Drawing.Color.White;
+            //this.wCtrl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            //this.wCtrl1.Location = new System.Drawing.Point(0, 0);
+            //this.wCtrl1.Name = "wCtrl1";
+            //this.wCtrl1.Size = new System.Drawing.Size(625, 522);
+            //this.wCtrl1.TabIndex = 0;
+            //this.wCtrl1.WebView = this.Web;
             // 
             // HelpContentPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.Web);
+            //this.Controls.Add(this.wCtrl1);
             this.Name = "HelpContentPanel";
             this.Size = new System.Drawing.Size(625, 522);
             this.ResumeLayout(false);
@@ -52,8 +62,8 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.WebBrowser Web;
+        //private WebControl wCtrl1;
+        //private WebView Web;
 
     }
 }

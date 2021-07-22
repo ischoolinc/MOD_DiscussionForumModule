@@ -12,13 +12,6 @@ namespace DiscussionForumModule
         {
             RegisterTab();
 
-
-            //RibbonBarItem rbItem = MotherForm.RibbonBarItems["討論區", "快速連結"];
-            //rbItem["官方網站"].Click += delegate
-            //{
-            //    ForumAdmin.Instance.ReSet("http://www.ischool.com.tw/");
-            //};
-
             RibbonBarItem rbItem1 = MotherForm.RibbonBarItems["客戶服務", "網頁功能項目"];
             rbItem1["上一頁"].Image = Properties.Resources.first_64;
             rbItem1["上一頁"].Size = RibbonBarButton.MenuButtonSize.Large;
@@ -46,108 +39,48 @@ namespace DiscussionForumModule
             };
 
             RibbonBarItem rbItem_5 = MotherForm.RibbonBarItems["客戶服務", "ischool"];
-            string name_1 = "客戶服務URL設定值";
-            string name_2 = "目前URL";
-            
-            //Campus.Configuration.ConfigData cd = Campus.Configuration.Config.User[name_1];
-            //if (cd[name_2] != "")
-            //{
-            //    if (cd[name_2].Contains("http"))
-            //    {
-            //        ForumAdmin.Instance.ReSet(cd[name_2]);
-            //    }
-            //}
+           
 
             rbItem_5["客戶服務"].Size = RibbonBarButton.MenuButtonSize.Large;
             rbItem_5["客戶服務"].Image = Properties.Resources.recepcionist_64;
             rbItem_5["客戶服務"].Click += delegate
             {
-                ForumAdmin.Instance.ReSet("https://ischool.zendesk.com/home");
-                //cd[name_2] = "https://ischool.zendesk.com/home";
-                //cd.Save();
+                System.Diagnostics.Process.Start("https://ischool.zendesk.com/hc/zh-tw");
             };
 
-            RibbonBarItem rbItem = MotherForm.RibbonBarItems["客戶服務", "快速連結"];
+            RibbonBarItem rbItem2 = MotherForm.RibbonBarItems["客戶服務", "FaceBook"];
+            rbItem2["ischool 澔學"].Size = RibbonBarButton.MenuButtonSize.Medium;
+            rbItem2["ischool 澔學"].Click += delegate
+            {
+                ForumAdmin.Instance.ReSet("https://www.facebook.com/pages/ischool-%E6%BE%94%E5%AD%B8/134650313212257");
+            };
+
+            rbItem2["1know粉絲團"].Size = RibbonBarButton.MenuButtonSize.Medium;
+            rbItem2["1know粉絲團"].Click += delegate
+            {
+                ForumAdmin.Instance.ReSet("https://www.facebook.com/1know.net");
+            };
+
+            rbItem2["1Know翻轉你的學習"].Size = RibbonBarButton.MenuButtonSize.Medium;
+            rbItem2["1Know翻轉你的學習"].Click += delegate
+            {
+                ForumAdmin.Instance.ReSet("https://www.facebook.com/groups/1know/");
+            };
+
+            rbItem2["新竹市1Campus平台"].Size = RibbonBarButton.MenuButtonSize.Medium;
+            rbItem2["新竹市1Campus平台"].Click += delegate
+            {
+                ForumAdmin.Instance.ReSet("https://www.facebook.com/groups/1462857227381317");
+            };
+
+            RibbonBarItem rbItem = MotherForm.RibbonBarItems["客戶服務", "開發者"];
 
             rbItem["開發者精靈"].Size = RibbonBarButton.MenuButtonSize.Medium;
             rbItem["開發者精靈"].Image = Properties.Resources.technology_64;
             rbItem["開發者精靈"].Click += delegate
             {
                 ForumAdmin.Instance.ReSet("https://sites.google.com/a/ischool.com.tw/kai-fa-zhe-jing-ling/");
-                //cd[name_2] = "https://sites.google.com/a/ischool.com.tw/kai-fa-zhe-jing-ling/";
-                //cd.Save();
             };
-
-            rbItem["討論區(舊)"].Image = Properties.Resources.Logo_black;
-            rbItem["討論區(舊)"].Size = RibbonBarButton.MenuButtonSize.Medium;
-            rbItem["討論區(舊)"].Click += delegate
-            {
-                ForumAdmin.Instance.ReSet("http://forum.ischool.com.tw/index.php");
-                //cd[name_2] = "http://forum.ischool.com.tw/index.php";
-                //cd.Save();
-            };
-
-            rbItem["高雄國中"].Size = RibbonBarButton.MenuButtonSize.Medium;
-            rbItem["高雄國中"]["校務行政平台"].Click += delegate
-            {
-                ForumAdmin.Instance.ReSet("http://sites.google.com/a/ischool.com.tw/gao-xiong-shi-guo-zhong-xi-tong-xie-zuo-ping-tai/");
-                //cd[name_2] = "http://sites.google.com/a/ischool.com.tw/gao-xiong-shi-guo-zhong-xi-tong-xie-zuo-ping-tai/";
-                //cd.Save();
-            };
-
-            RibbonBarItem rbItem2 = MotherForm.RibbonBarItems["客戶服務", "FaceBook"];
-            rbItem2["ischool粉絲團"].Size = RibbonBarButton.MenuButtonSize.Medium;
-            //rbItem2["ischool粉絲團"].Image = Properties.Resources.th;
-            rbItem2["ischool粉絲團"].Click += delegate
-            {
-                ForumAdmin.Instance.ReSet("https://www.facebook.com/pages/ischool-%E6%BE%94%E5%AD%B8/134650313212257");
-                //cd[name_2] = "https://www.facebook.com/pages/ischool-%E6%BE%94%E5%AD%B8/134650313212257";
-                //cd.Save();
-            };
-
-            rbItem2["ischool社團"].Size = RibbonBarButton.MenuButtonSize.Medium;
-            //rbItem2["ischool社團"].Image = Properties.Resources.th;
-            rbItem2["ischool社團"].Click += delegate
-            {
-                ForumAdmin.Instance.ReSet("https://www.facebook.com/groups/427416620714570/");
-                //cd[name_2] = "https://www.facebook.com/groups/427416620714570/";
-                //cd.Save();
-            };
-
-            rbItem2["1know粉絲團"].Size = RibbonBarButton.MenuButtonSize.Medium;
-            //rbItem2["1know粉絲團"].Image = Properties.Resources.th;
-            rbItem2["1know粉絲團"].Click += delegate
-            {
-                ForumAdmin.Instance.ReSet("https://www.facebook.com/1know.net");
-                //cd[name_2] = "https://www.facebook.com/1know.net";
-                //cd.Save();
-            };
-
-            rbItem2["1know社團"].Size = RibbonBarButton.MenuButtonSize.Medium;
-            //rbItem2["1know社團"].Image = Properties.Resources.th;
-            rbItem2["1know社團"].Click += delegate
-            {
-                ForumAdmin.Instance.ReSet("https://www.facebook.com/groups/1know/");
-                //cd[name_2] = "https://www.facebook.com/groups/1know/";
-                //cd.Save();
-            };
-            //rbItem["ischool 新聞台"].Size = RibbonBarButton.MenuButtonSize.Medium;
-            //rbItem["ischool 新聞台"].Click += delegate
-            //{
-            //    ForumAdmin.Instance.ReSet("http://betasmartschool.blogspot.com/");
-            //};
-
-            //rbItem["ischool 模組開發者網站"].Size = RibbonBarButton.MenuButtonSize.Medium;
-            //rbItem["ischool 模組開發者網站"].Click += delegate
-            //{
-            //    ForumAdmin.Instance.ReSet("https://sites.google.com/a/ischool.com.tw/dev/");
-            //};
-
-            //rbItem["ischool Plugin"].Size = RibbonBarButton.MenuButtonSize.Medium;
-            //rbItem["ischool Plugin"].Click += delegate
-            //{
-            //    ForumAdmin.Instance.ReSet("https://sites.google.com/a/ischool.com.tw/plugin/");
-            //};
         }
 
         public static void RegisterTab()
