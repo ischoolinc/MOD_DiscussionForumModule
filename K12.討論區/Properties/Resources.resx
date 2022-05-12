@@ -142,4 +142,7 @@
   <data name="technology_64" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\technology_64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="LINE_Auto_Backup_Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LINE-Auto-Backup-Logo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>
