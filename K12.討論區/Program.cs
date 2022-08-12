@@ -83,6 +83,12 @@ namespace DiscussionForumModule
 
             MenuButton rbItem_5 = MotherForm.StartMenu["客戶服務"];
             rbItem_5.Image = Properties.Resources.recepcionist_64;
+
+            rbItem_5["111年教育訓練影片(New)"].Click += delegate
+            {
+                System.Diagnostics.Process.Start("https://ischool.zendesk.com/hc/zh-tw/articles/9348401339545");
+            };
+
             rbItem_5["客服網站"].Click += delegate
             {
                 System.Diagnostics.Process.Start("https://ischool.zendesk.com/hc/zh-tw");
@@ -100,12 +106,7 @@ namespace DiscussionForumModule
 
             rbItem_5["教學手冊"].Click += delegate
             {
-                System.Diagnostics.Process.Start("https://ischool.zendesk.com/hc/zh-tw/categories/200137043-%E6%95%99%E5%AD%B8%E6%89%8B%E5%86%8A");
-            };
-
-            rbItem_5["110教育訓練影片"].Click += delegate
-            {
-                System.Diagnostics.Process.Start("https://ischool.zendesk.com/hc/zh-tw/articles/4404609999001-110%E5%AD%B8%E5%B9%B4%E5%BA%A6-%E5%9C%8B-%E9%AB%98%E4%B8%AD%E6%9C%9F%E5%88%9D%E6%95%99%E8%82%B2%E8%A8%93%E7%B7%B4%E5%BD%B1%E7%89%87");
+                System.Diagnostics.Process.Start("https://ischool.zendesk.com/hc/zh-tw/categories/200137043");
             };
         }
 
