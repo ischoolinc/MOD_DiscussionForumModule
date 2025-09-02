@@ -137,14 +137,6 @@
   <ItemGroup>
     <Content Include="Library\Campus.Configuration.dll" />
     <Content Include="Library\Campus.Configuration.pdb" />
-    <Content Include="Library\EO.Base.dll" />
-    <Content Include="Library\EO.Base.xml" />
-    <Content Include="Library\EO.WebBrowser.dll" />
-    <Content Include="Library\EO.WebBrowser.WinForm.DLL" />
-    <Content Include="Library\EO.WebBrowser.WinForm.xml" />
-    <Content Include="Library\EO.WebBrowser.xml" />
-    <Content Include="Library\EO.WebEngine.dll" />
-    <Content Include="Library\EO.WebEngine.xml" />
     <Content Include="Library\FISCA.dll" />
     <Content Include="Library\FISCA.pdb" />
     <Content Include="Library\FISCA.Presentation.dll" />
