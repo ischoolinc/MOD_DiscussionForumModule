@@ -15,9 +15,9 @@ namespace DiscussionForumModule
             MenuButton rbItem_5 = MotherForm.StartMenu["客戶服務"];
             rbItem_5.Image = Properties.Resources.recepcionist_64;
 
-            rbItem_5["114學年度期初教育訓練"].Click += delegate
+            rbItem_5["115學年度期初教育訓練"].Click += delegate
             {
-                System.Diagnostics.Process.Start("https://support.ischool.com.tw/hc/zh-tw/articles/50086368751641-114-%E5%AD%B8%E5%B9%B4%E5%BA%A6-%E6%9C%9F%E5%88%9D%E6%95%99%E8%82%B2%E8%A8%93%E7%B7%B4");
+                System.Diagnostics.Process.Start("https://support.ischool.com.tw/hc/zh-tw/articles/61385045818905-115-%E5%AD%B8%E5%B9%B4%E5%BA%A6-%E6%9C%9F%E5%88%9D%E6%95%99%E8%82%B2%E8%A8%93%E7%B7%B4");
             };
 
             rbItem_5["客服網站"].Click += delegate
