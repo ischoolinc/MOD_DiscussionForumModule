@@ -34,6 +34,11 @@ namespace DiscussionForumModule
             {
                 System.Diagnostics.Process.Start("https://ischool.zendesk.com/hc/zh-tw/requests/new");
             };
+
+            rbItem_5["1Campus應用市集"].Click += delegate
+            {
+                System.Diagnostics.Process.Start("https://market-test.1campus.net/");
+            };
         }
 
         public static void RegisterTab()
